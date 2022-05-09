@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# ToDo List Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Esse desafio consiste no consumo de uma Fake API, onde há uma visualização de uma To-Do List.
+Este projeto foi criado com ReactJS, tendo o estilo responsivo e feito com ContextAPI, afim de evitar prop drilling e otimização do compartilhamento de estados.
 
-## Available Scripts
+## Executando o projeto
 
-In the project directory, you can run:
+Para execução do projeto, é necessário algum gerenciador de pacotes do Node.js, como [npm](https://www.npmjs.com) ou [yarn](https://yarnpkg.com) instalado na máquina.
+Uma vez que esteja instalado, é necessário clonar o repositório no terminal, através do link:
 
-### `yarn start`
+Após isso, acesse o respositório na sua máquina com o seguinte comando:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```sh
+ cd to-do-list
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Após estar dentro do repositório, baixe as dependências necessárias utilizando o comando:
 
-### `yarn test`
+```sh
+npm install
+# ou
+yarn install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Após as dependências serem baixadas, será possível executar o projeto com o seguinte comando:
 
-### `yarn build`
+```sh
+yarn start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Isso irá abrir a página [http://localhost:3000](http://localhost:3000) no seu navegador, onde poderá visualizar o resultado do projeto 🚀.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Objetivos
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1 - Utilizar a API [JSONPlaceHolder](https://jsonplaceholder.typicode.com/) para criar um TODO list; [✔️]
 
-### `yarn eject`
+2 - A página inicial do TODO deve mostrar todos os usuários; [✔️]
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3 - Ao clicar no usuário o site deve levar para uma página que lista os TODO (tarefas) do usuário em questão; [✔️]
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4 - Deve ser possível adicionar um novo item no TODO list de um usuário específico; bem como marcar uma tarefa como concluída ou pendente; [✔️]
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Ao abrir a página do inicial, o usuário irá visualizar a lista de usuários completa, fornecida pela API.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Ao clicar em um usuário em específico, será redirecionado para a lista de tarefas do usuário em questão.
 
-## Learn More
+Para criar uma nova tarefa, basta clicar no botão "Criar tarefa", onde será aberto um modal para criação da tarefa, contendo um único input de título da tarefa. (A visualização da resposta estará na aba "Console" do Dev Tools).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Para atualizar uma tarefa, basta clicar no status dela (Completed ou Incompleted), onde será atualizado o status da mesma. (A visualização da resposta estará na aba "Console" do Dev Tools).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Tecnologias utilizadas
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Axios](https://axios-http.com/ptbr/docs/intro)
+- [React-Router-Dom](https://reactrouter.com)
+- [styled-components](https://styled-components.com)
+- [React Icons](https://react-icons.github.io/react-icons)
