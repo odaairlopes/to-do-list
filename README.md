@@ -6,7 +6,13 @@ Este projeto foi criado com ReactJS, tendo o estilo responsivo e feito com Conte
 ## Executando o projeto
 
 Para execução do projeto, é necessário algum gerenciador de pacotes do Node.js, como [npm](https://www.npmjs.com) ou [yarn](https://yarnpkg.com) instalado na máquina.
-Uma vez que esteja instalado, é necessário clonar o repositório no terminal, através do link:
+Uma vez que esteja instalado, é necessário clonar o repositório no terminal, utilizando o seguinte comando:
+
+```sh
+git clone https://github.com/odaairlopes/to-do-list.git
+# ou
+git clone git@github.com:odaairlopes/to-do-list.git
+``` 
 
 Após isso, acesse o respositório na sua máquina com o seguinte comando:
 
